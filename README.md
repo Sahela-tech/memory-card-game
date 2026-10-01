@@ -1,5 +1,3 @@
-Hari machan! Oyage Memory Card Game eke aluth features okkoma (Easy/Medium/Hard mode selection, automatic countdown timer, Levels 1 to 5 level-progression & win-to-unlock mechanism) thiyena, GitHub එකට ගැලපෙන **විස්තරාත්මක README.md file content eka** පහතින් separate වෙන් කරලා දීලා තියෙනවා.
-
 ---
 
 ### 📄 `README.md` (Project Details)
