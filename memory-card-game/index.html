@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Matching Game - Level Progression</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Memory Match</h1>
+        
+        <div class="controls-container">
+            <div class="control-box">
+                <label for="mode-select">Mode: </label>
+                <select id="mode-select">
+                    <option value="easy" selected>Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div class="control-box">
+                <span class="level-label">Current Level:</span>
+                <span id="level-display" class="level-badge">Level 1</span>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <span class="stat-label">Moves:</span>
+                <span id="moves" class="stat-value">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Time Left:</span>
+                <span id="timer" class="stat-value">03:30</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Score:</span>
+                <span id="score" class="stat-value">0</span>
+            </div>
+        </div>
+
+        <div class="game-board" id="game-board"></div>
+
+        <button id="restart-btn" class="btn">Restart Level</button>
+    </div>
+
+    <!-- Win / Game Over Modal -->
+    <div id="status-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-title">🎉 Level Cleared! 🎉</h2>
+            <p id="modal-msg">You matched all cards successfully!</p>
+            <p>Total Moves: <strong id="final-moves">0</strong></p>
+            <p>Time Remaining: <strong id="final-time">00:00</strong></p>
+            <p>Final Score: <strong id="final-score">0</strong></p>
+            <div class="modal-buttons">
+                <button id="modal-action-btn" class="btn">Next Level 🚀</button>
+                <button id="modal-restart-btn" class="btn btn-secondary">Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
